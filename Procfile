@@ -1,1 +1,1 @@
-web: gunicorn urexpenses.wsgi
+web: gunicorn --pythonpath mysite mysite.wsgi
