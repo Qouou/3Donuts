@@ -1,0 +1,34 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+alive-progress = "*"
+pytorch = "*"
+scikit-image = "*"
+tqdm = "*"
+opencv-python = "*"
+trimesh = "*"
+ffmpeg = "*"
+Django = "==3"
+Pillow = "*"
+torch = "*"
+torchvision = "*"
+pyopengl = "*"
+pyopengl-accelerate = "*"
+pycocotools = "*"
+pytorch3d = "*"
+removebg = "*"
+django-bootstrap3 = "*"
+paypal = "*"
+social-auth-app-django = "*"
+gunicorn = "*"
+psycopg2 = "*"
+whitenoise = "*"
+python-social-auth = "*"
+
+[requires]
+python_version = "3.6"

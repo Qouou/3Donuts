@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>所有使用者</title>
+</head>
+<body>
+    <h1>當前使用者</h1>
+    {% if request.user.is_authenticated %}
+    {{ request.user.username }}，您好！
+    {% else %}
+    請登陸，這裡放登陸連結
+    {% endif %}
+    <h1>使用者列表</h1>
+    {% for user in donuts_user_picture %}
+    {% if request.user.username == user.user_name %}
+        <h2>{{ user.user_name }}</h2>
+        <h2>{{ user.user_image}}</h2>
+    {% endif  %}
+    {% endfor %}
+</body>
+</html>
+

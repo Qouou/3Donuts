@@ -1,0 +1,4 @@
+API key = jjsL3zr8oVHVjn6myEjypJxa
+curl -H ' jjsL3zr8oVHVjn6myEjypJxa'                      \
+       -F ''                \
+       -f https://api.remove.bg/v1.0/removebg -o no-bg.png

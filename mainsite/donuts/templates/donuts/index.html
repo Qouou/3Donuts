@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<input type='file' />
+  <br/>
+  <img id="demo"/>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script>
+    $('input').on('change', function(e){      
+      const file = this.files[0];
+      const objectURL = URL.createObjectURL(file);
+      
+      $('#demo').attr('src', objectURL);
+    });
+  </script>
+
+{% endblock %}

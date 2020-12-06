@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>註冊</title>
+    </head>
+    <body>
+        <h1>註冊新帳號</h1>
+        <form action="" method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="註冊">
+        </form>
+    </body>
+</html>
